@@ -1,0 +1,14 @@
+/* Mixins */
+
+// Clearfix
+@mixin clearfix() {
+
+  // Before & After
+  &:before,
+  &:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+
+} // end clearfix()

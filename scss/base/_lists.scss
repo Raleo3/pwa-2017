@@ -1,0 +1,53 @@
+/* List Styles */
+
+// Lists
+ul,
+ol {
+}
+
+// Unordered
+ul {
+  list-style: disc;
+}
+
+// Ordered
+ol {
+  list-style: decimal;
+}
+
+// Item
+li {
+
+  // Child Lists
+  ul,
+  ol {
+    margin-bottom: 0;
+  }
+
+  // Unordered
+  ul {
+    list-style: circle;
+  }
+
+  // Ordered
+  ol {
+    list-style: lower-alpha;
+  }
+
+} // end item
+
+// Description List
+dl {
+  margin-bottom: 1rem;
+
+  // Term
+  dt {
+    font-weight: bold;
+  }
+
+  // Description
+  dd {
+    margin: 0;
+  }
+
+} // end description list

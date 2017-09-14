@@ -1,0 +1,31 @@
+/* Buttons */
+
+// All Buttons
+input[type="button"]
+input[type="search"],
+input[type="submit"],
+button {
+  appearance: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  // Hover
+  &:hover,
+  &:focus,
+  &:active {
+  }
+
+  // Disabled
+  &:disabled {
+    cursor: not-allowed;
+
+    // Hover
+    &:hover,
+    &:focus,
+    &:active {}
+
+  } // end disabled
+
+} // end all buttons

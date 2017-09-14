@@ -1,0 +1,153 @@
+/* Form Elements */
+
+/* Global */
+// Defaults
+input,
+label,
+select,
+textarea {
+  display: block;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+// All Possible Inputs
+input[type=""],
+select,
+textarea {
+
+  // Hover
+  &:hover {}
+
+  // Focus & Active
+  &:focus,
+  &:active {
+    outline: none;
+  }
+
+  // Disabled
+  &:disabled {
+    cursor: not-allowed;
+
+    // Hover
+    &:hover,
+    &:active,
+    &:focus {}
+
+  } // end disabled
+
+} // end all possible inputs
+
+/* Validation */
+// Input States
+input,
+select,
+textarea {
+
+  // Invalid / Error
+  &.invalid,
+  &.error {}
+
+} // end input states
+
+/* Elements */
+// Generic Input
+input {
+
+  // Checkbox & Radio
+  &[type="checkbox"],
+  &[type="radio"] {
+    cursor: pointer;
+
+    // Hover
+    &:hover,
+    &:focus,
+    &:active {}
+
+  } // end checkbox & radio
+
+} // end generic input
+
+// Select
+select {
+
+  // Option
+  option {
+
+    // Hover
+    &:hover {
+    }
+
+  } // end option
+
+  // Multi-Select
+  &[multiple] {
+
+    // Options
+    option {
+    }
+
+  } // end multi-select
+
+} // end select
+
+// Text Area
+textarea {
+}
+
+// Label
+label {
+
+  // Hover
+  &:hover,
+  &:focus,
+  &:active {
+  }
+
+  // Required
+  &.form-required,
+  &.required {
+
+    // Hover
+    &:hover,
+    &:focus,
+    &:active {
+
+    } // end hover
+
+    // Icon
+    &:after {
+      content: "*";
+    }
+
+  } // end required
+
+} // end label
+
+// Fieldset
+fieldset {}
+
+// Legend
+legend {}
+
+// Placeholders
+::-webkit-input-placeholder {
+//  color: $input-placeholder-color;
+//  font-size: $input-placeholder-size;
+}
+::-moz-placeholder {
+//  color: $input-placeholder-color;
+//  font-size: $input-placeholder-size;
+}
+:-moz-placeholder {
+//  color: $input-placeholder-color;
+//  font-size: $input-placeholder-size;
+}
+:-ms-input-placeholder {
+//  color: $input-placeholder-color;
+//  font-size: $input-placeholder-size;
+}
+::placeholder {
+//  color: $input-placeholder-color;
+//  font-size: $input-placeholder-size;
+}
